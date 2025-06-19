@@ -1,7 +1,7 @@
-import {Entity, Component} from "/ECS/ecs.js";
+import {Entity, Component} from "../ecs.js";
 
-import {Mover} from "/ECS/components/movement.js";
-import {RectSprite} from "/ECS/components/sprites.js";
+import {Mover} from "../components/movement.js";
+import {RectSprite} from "../components/sprites.js";
 
 const PADDLE_SPEED = 300;
 

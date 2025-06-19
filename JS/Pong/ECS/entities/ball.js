@@ -1,7 +1,7 @@
-import {Entity, Component} from "/ECS/ecs.js";
+import {Entity, Component} from "../ecs.js";
 
-import {Mover} from "/ECS/components/movement.js";
-import {CircleSprite} from "/ECS/components/sprites.js";
+import {Mover} from "../components/movement.js";
+import {CircleSprite} from "../components/sprites.js";
 
 const BALL_R = 8;
 const BALL_SPEED = 350;

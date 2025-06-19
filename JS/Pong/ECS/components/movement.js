@@ -1,4 +1,4 @@
-import {Entity, Component} from "/ECS/ecs.js"
+import {Entity, Component} from "../ecs.js"
 
 export class Mover extends Component {
 	constructor(xvel, yvel) {

@@ -1,7 +1,7 @@
-import {Entity, Component} from "/ECS/ecs.js";
+import {Entity, Component} from "./ECS/ecs.js";
 
-import {Ball} from "/ECS/entities/ball.js";
-import {Paddle} from "/ECS/entities/paddle.js";
+import {Ball} from "./ECS/entities/ball.js";
+import {Paddle} from "./ECS/entities/paddle.js";
 
 const PADDLE_DIST = 50;
 
