@@ -1,2 +1,0 @@
-def s -override -params 1.. %{echo -debug %sh{$@}; b *debug*}; complete-command s file
-
