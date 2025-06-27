@@ -14,10 +14,12 @@ class Pacman(Entity):
 		self.maze = maze
 		self.center = Vector2(self.PLAYER_SIZE/2, self.PLAYER_SIZE/2)
 
+		self.score: int = 0
+
 		self.mover = ColliderMover(self.maze, offset = self.center)
 		super().__init__(pos, [
 			self.mover,
-				CircleSprite(radius = self.PLAYER_SIZE/2, offset = self.center, color = self.PLAYER_COLOR),
+			CircleSprite(radius = self.PLAYER_SIZE/2, offset = self.center, color = self.PLAYER_COLOR),
 		])
 
 	def process(self, delta: float, keys: list[bool]):

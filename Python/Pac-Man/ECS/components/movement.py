@@ -22,3 +22,7 @@ class ColliderMover(Component):
 		if (not self.maze.is_in_wall(next_pos + self.offset)):
 			self.owner.pos = next_pos
 
+	def test_move(self, delta: float):
+		next_pos = self.owner.pos + self.vel * delta
+		return not self.maze.is_in_wall(next_pos + self.offset)
+
