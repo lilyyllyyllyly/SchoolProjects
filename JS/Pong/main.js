@@ -1,10 +1,13 @@
 const WIN_W = 600
 const WIN_H = 400
 
+new p5();
+
 let entities = [];
 
 function setup() {
 	createCanvas(WIN_W, WIN_H);
+	angleMode(RADIANS);
 }
 
 function draw() {
@@ -15,5 +18,9 @@ function draw() {
 		e.update(delta);
 		e.draw();
 	}
+}
+
+function clamp(t, min, max) {
+	return Math.min(Math.max(t, min), max);
 }
 
